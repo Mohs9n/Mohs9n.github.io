@@ -1,1 +1,55 @@
-<h1>Hello, Ahmed</h1>
+// write a simple portfolio website with the following structure:
+// - header with a title
+// - navigation with 3 links: Home, About, Contact
+// - main section with 3 articles:
+//   - Home: a short introduction about yourself
+//   - About: a list of your skills
+//   - Contact: a form with 3 fields: name, email, message
+// - footer with your name and the current year
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article id="home">
+        <h2>Home</h2>
+        <p>Welcome to my portfolio website. My name is John Doe.</p>
+      </article>
+      <article id="about">
+        <h2>About</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </article>
+      <article id="contact">
+        <h2>Contact</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2021 John Doe</p>
+    </footer>
+  </body>
+</html>
